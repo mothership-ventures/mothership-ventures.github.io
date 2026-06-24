@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mothership — Technical Think-and-Do Tank</title>
-  <meta name="description" content="Mothership is a technical think-and-do tank that originates ventures, co-builds with founders, and turns every build into an advantage for what comes next.">
+  <title>Mothership Ventures — Technology Think-and-Do Tank</title>
+  <meta name="description" content="Nonlinear thinking, made operational. A Technology Think-and-Do Tank that originates ventures, co-builds with founders, and compounds what it learns.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#000000">
   <link rel="canonical" href="https://mothership-ventures.github.io/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Mothership — Technical Think-and-Do Tank">
-  <meta property="og:description" content="We find the structure before it becomes a category—and build the company that proves it.">
+  <meta property="og:title" content="Mothership Ventures — Technology Think-and-Do Tank">
+  <meta property="og:description" content="Nonlinear thinking, made operational. A Technology Think-and-Do Tank that originates ventures, co-builds with founders, and compounds what it learns.">
   <meta property="og:url" content="https://mothership-ventures.github.io/">
-  <meta property="og:site_name" content="Mothership">
+  <meta property="og:site_name" content="Mothership Ventures">
   <meta property="og:image" content="https://mothership-ventures.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Mothership — thought made operational">
+  <meta property="og:image:alt" content="Mothership Ventures — nonlinear thinking made operational">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mothership — Technical Think-and-Do Tank">
-  <meta name="twitter:description" content="We find the structure before it becomes a category—and build the company that proves it.">
+  <meta name="twitter:title" content="Mothership Ventures — Technology Think-and-Do Tank">
+  <meta name="twitter:description" content="Nonlinear thinking, made operational. A Technology Think-and-Do Tank that originates ventures, co-builds with founders, and compounds what it learns.">
   <meta name="twitter:image" content="https://mothership-ventures.github.io/og-image.png">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,18 +171,27 @@
       width: min(100%, var(--max));
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       gap: 20px;
     }
 
     .brand {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 11px;
       color: #e5e7e2;
-      font-size: 14px;
-      letter-spacing: .01em;
+      font-family: "Geist Mono", monospace;
+      font-size: clamp(11px, 1.6vw, 13px);
+      font-weight: 500;
+      letter-spacing: .11em;
+      text-transform: uppercase;
       white-space: nowrap;
+      transition: color .28s var(--ease), transform .28s var(--ease);
+    }
+
+    .brand:hover {
+      color: #fff;
+      transform: translateY(-1px);
     }
 
     .mark {
@@ -1106,15 +1115,18 @@
       position: relative;
       z-index: 2;
       display: flex;
-      justify-content: space-between;
-      gap: 24px;
-      padding: 28px 32px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 32px 24px 36px;
       border-top: 1px solid rgba(255,255,255,.055);
       color: rgba(255,255,255,.38);
       font-family: "Geist Mono", monospace;
       font-size: 10px;
       letter-spacing: .035em;
       text-transform: uppercase;
+      text-align: center;
     }
 
     .reveal {
@@ -1211,13 +1223,15 @@
       }
 
       .brand {
-        font-size: 12px;
+        gap: 10px;
+        font-size: 10.5px;
+        letter-spacing: .085em;
       }
 
-      .topbar .button {
-        min-height: 34px;
-        padding-inline: 12px;
-        font-size: 11px;
+      .mark {
+        width: 20px;
+        height: 20px;
+        flex-basis: 20px;
       }
 
       .hero {
@@ -1361,11 +1375,10 @@
 
   <nav class="topbar" aria-label="Primary navigation">
     <div class="topbar-inner">
-      <a class="brand" href="#top" aria-label="Mothership, return to top">
+      <a class="brand" href="#top" aria-label="Mothership Ventures, return to top">
         <span class="mark" aria-hidden="true"></span>
-        <span>Mothership</span>
+        <span>Mothership Ventures</span>
       </a>
-      <a class="button primary" href="#enter" data-booking-link>Begin Here</a>
     </div>
   </nav>
 
@@ -1390,18 +1403,18 @@
 
       <div class="hero-content">
         <div class="hero-meta reveal">
-          <span>Technical think-and-do tank</span>
+          <span>Technology Think-and-Do Tank</span>
           <span>Thought → Venture → Infrastructure</span>
           <span>Venture system / 2026</span>
         </div>
 
         <div class="hero-main reveal">
           <div class="eyebrow">Mothership</div>
-          <h1 id="hero-title">We find the structure before it becomes a category—and build the company that proves it.</h1>
-          <p class="hero-intro">Mothership is a technical think-and-do tank. We originate ventures, co-build with founders, and turn everything we learn into an advantage for what we build next.</p>
+          <h1 id="hero-title">Nonlinear thinking, made operational.</h1>
+          <p class="hero-intro">Mothership Ventures is a Technology Think-and-Do Tank for minds that move across domains. We originate ventures, co-build with founders, and turn every build into reusable data, systems, knowledge, and operating advantage.</p>
           <div class="hero-actions">
             <a class="button" href="#fields">Explore our fields of interest <span class="arrow" aria-hidden="true">↓</span></a>
-            <a class="button primary" href="#enter" data-booking-link>Begin Here <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button primary" href="#enter" data-booking-link>Mothership Calls <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
         </div>
 
@@ -1673,7 +1686,7 @@
           </div>
           <div class="entry-convergence">
             <strong>Your idea or ours. Begin with a conversation.</strong>
-            <a class="button primary" href="#enter" data-booking-link>Begin Here <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button primary" href="#enter" data-booking-link>Mothership Calls <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
         </div>
       </div>
@@ -1689,8 +1702,10 @@
   </main>
 
   <footer class="footer">
-    <span>Mothership / © 2026</span>
-    <span>Technical think-and-do tank</span>
+    <span>Mothership Ventures / © 2026</span>
+    <span>Nada Technologies UG (haftungsbeschränkt)</span>
+    <span>Poststraße 33, 20354 Hamburg, Germany</span>
+    <span>Geschäftsführer: Karim Ahmed · Amtsgericht Hamburg · HRB 143470</span>
   </footer>
 
   <script>
